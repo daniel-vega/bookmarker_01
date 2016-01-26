@@ -238,3 +238,86 @@ Stack Trace:
 #1 {main}
 
 
+2016-01-26 03:09:45 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-01-26 03:10:39 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\login.ctp',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Controller\Controller.php(612): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-01-26 03:17:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /user/login
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-26 03:18:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /user/login
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-26 03:18:56 Error: [Cake\Controller\Exception\MissingActionException] Action BookmarksController::users() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'users',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /bookmarks/users/logout
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BookmarksController))
+#2 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-01-26 03:19:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /user/logout
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

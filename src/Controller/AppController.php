@@ -39,24 +39,24 @@ class AppController extends Controller
      */
     public function initialize()
     {
-        parent::initialize();
-
-        $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-    }
+        $this->loadComponent('Auth', [
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'email',
+                        'password' => 'password'
+                    ]
+                ]
+            ],
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ]
+        ]);
 
-    /**
-     * Before render callback.
-     *
-     * @param \Cake\Event\Event $event The beforeRender event.
-     * @return void
-     */
-    public function beforeRender(Event $event)
-    {
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-            in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
-            $this->set('_serialize', true);
-        }
+        // Allow the display action so our pages controller
+        // continues to work.
+        $this->Auth->allow(['display']);
     }
 }
