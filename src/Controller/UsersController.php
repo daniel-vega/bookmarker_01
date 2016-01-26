@@ -18,7 +18,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect($this->Auth->redirectUrl('/Bookmarks'));
             }
             $this->Flash->error('Your username or password is incorrect.');
         }
@@ -27,6 +27,12 @@ class UsersController extends AppController
     {
         $this->Flash->success('You are now logged out.');
         return $this->redirect($this->Auth->logout());
+    }
+
+    public function beforeFilter(\Cake\Event\Event $event)
+    {
+        $this->Auth->allow(['add']);
+        //$this->Auth->allow(['index']);  // permite ver la lista de usuarios sin estar logueado
     }
     /**
      * Index method

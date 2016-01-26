@@ -62,6 +62,7 @@ Router::scope('/', function ($routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    //$routes->connect('/', ['controller' => 'Users', 'action' => 'login', 'login']); // envía al login pero con o sin autenticación
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
