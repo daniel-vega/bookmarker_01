@@ -1,0 +1,240 @@
+2016-01-24 23:23:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found.
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/admin
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-24 23:23:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Administrator could not be found.
+Exception Attributes: array (
+  'class' => 'Administrator',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/administrator
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-24 23:42:39 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /bookmarker/users/view/
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\src\Controller\UsersController.php(36): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#5 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-01-25 00:13:24 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "bookmarks" with primary key [NULL]
+Request URL: /bookmarker/bookmarks/view
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\src\Controller\BookmarksController.php(39): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\BookmarksController->view()
+#2 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BookmarksController))
+#5 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-01-25 00:14:57 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /bookmarker/users/view/da%40da.cl
+Referer URL: http://localhost:8080/bookmarker/bookmarks/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\bookmarker\src\Controller\UsersController.php(36): Cake\ORM\Table->get('da@da.cl', Array)
+#2 [internal function]: App\Controller\UsersController->view('da@da.cl')
+#3 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-01-25 00:16:50 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "bookmarks" with primary key [NULL]
+Request URL: /bookmarker/bookmarks/view
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\src\Controller\BookmarksController.php(39): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\BookmarksController->view()
+#2 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BookmarksController))
+#5 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-01-25 00:54:48 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [C:\xampp\htdocs\bookmarker\src\Model\Entity\User.php, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-01-25 00:54:48 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /bookmarker/users/add
+Referer URL: http://localhost:8080/bookmarker/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-25 00:55:29 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [C:\xampp\htdocs\bookmarker\src\Model\Entity\User.php, line 25]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 209
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 92
+[main] - [internal], line ??
+
+
+
+2016-01-25 00:55:29 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /bookmarker/users/add
+Referer URL: http://localhost:8080/bookmarker/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(92): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\xampp\\htdocs...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-01-25 01:07:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 01:09:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 01:09:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 01:11:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 01:14:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 01:15:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 23:14:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged/
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 23:15:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 23:26:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged/
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-01-25 23:26:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tagged could not be found.
+Exception Attributes: array (
+  'class' => 'Tagged',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bookmarker/tagged
+Stack Trace:
+#0 C:\xampp\htdocs\bookmarker\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
